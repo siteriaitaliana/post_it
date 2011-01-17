@@ -1,0 +1,70 @@
+Post:
+  actAs:
+    Timestampable: ~
+  columns:
+    content: 
+      type: string(255)
+      notnull: true
+    user_id:
+      type: integer(4)
+  relations:
+    User:
+      local: user_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+    Category:
+      class: Category
+      refClass: PostCategory
+      local: post_id
+      foreign: category_id
+      foreignAlias: PostCategories
+
+PostCategory:
+  columns:
+    post_id:  { type: integer, primary: true, notnull: true }
+    category_id: { type: integer, primary: true, notnull: true }
+  relations:
+    Post:  { onDelete: CASCADE, local: post_id, foreign: id }
+    Category: { onDelete: CASCADE, local: category_id, foreign: id }
+          
+Category:
+  columns:
+    name: 
+      type: string(255)
+
+      
+User:
+  actAs:
+    Timestampable: ~
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    name:
+      type: string(20)
+      notnull: true
+    surname:
+      type: string(20)
+      notnull: true
+    username:
+      type: string(20)
+      notnull: true
+      unique: true
+    password:
+      type: string(40)
+      notnull: true
+    email:
+      type: string(40)
+      notnull: true
+  relations:
+    Post:
+      local: id
+      foreign: user_id
+      type: many
+     
+ 
+   

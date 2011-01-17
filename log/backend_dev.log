@@ -1,0 +1,174 @@
+Dec 14 11:40:57 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Dec 14 11:40:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 14 11:40:57 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 14 11:40:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 14 11:40:57 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+Dec 14 11:40:57 symfony [info] {sfPHPView} Render "/Users/lorenzo/lib/vendor/symfony/lib/controller/default/templates/indexSuccess.php"
+Dec 14 11:40:57 symfony [info] {sfPHPView} Decorate content with "/Users/lorenzo/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Dec 14 11:40:57 symfony [info] {sfPHPView} Render "/Users/lorenzo/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Dec 14 11:40:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 14 11:40:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 14 11:40:57 symfony [info] {sfWebDebugLogger} Configuration 313.53 ms (9)
+Dec 14 11:40:57 symfony [info] {sfWebDebugLogger} Factories 220.03 ms (1)
+Dec 14 11:40:57 symfony [info] {sfWebDebugLogger} Action "default/index" 0.19 ms (1)
+Dec 14 11:40:57 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 28.51 ms (1)
+Dec 14 11:40:57 symfony [info] {sfWebResponse} Send content (29993 o)
+Dec 14 11:41:02 symfony [info] {sfPatternRouting} Match route "category" (/category.:sf_format) for /category with parameters array (  'module' => 'category',  'action' => 'index',  'sf_format' => 'html',)
+Dec 14 11:41:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 14 11:41:02 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 14 11:41:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 14 11:41:02 symfony [info] {categoryActions} Call "categoryActions->executeIndex()"
+Dec 14 11:41:02 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 14 11:41:02 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM category c - ()
+Dec 14 11:41:02 symfony [info] {sfPHPView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/indexSuccess.php"
+Dec 14 11:41:02 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_assets.php"
+Dec 14 11:41:02 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_flashes.php"
+Dec 14 11:41:02 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_header.php"
+Dec 14 11:41:02 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_filters.php"
+Dec 14 11:41:02 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_filters_field.php"
+Dec 14 11:41:02 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_filters_field.php"
+Dec 14 11:41:02 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.content AS p__content, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Dec 14 11:41:02 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.id AS u__id, u.name AS u__name, u.surname AS u__surname, u.username AS u__username, u.password AS u__password, u.email AS u__email, u.created_at AS u__created_at, u.updated_at AS u__updated_at FROM user u WHERE (u.id = ?) - (1)
+Dec 14 11:41:02 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.id AS u__id, u.name AS u__name, u.surname AS u__surname, u.username AS u__username, u.password AS u__password, u.email AS u__email, u.created_at AS u__created_at, u.updated_at AS u__updated_at FROM user u WHERE (u.id = ?) - (1)
+Dec 14 11:41:02 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.id AS u__id, u.name AS u__name, u.surname AS u__surname, u.username AS u__username, u.password AS u__password, u.email AS u__email, u.created_at AS u__created_at, u.updated_at AS u__updated_at FROM user u WHERE (u.id = ?) - (1)
+Dec 14 11:41:02 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.id AS u__id, u.name AS u__name, u.surname AS u__surname, u.username AS u__username, u.password AS u__password, u.email AS u__email, u.created_at AS u__created_at, u.updated_at AS u__updated_at FROM user u WHERE (u.id = ?) - (1)
+Dec 14 11:41:02 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.id AS u__id, u.name AS u__name, u.surname AS u__surname, u.username AS u__username, u.password AS u__password, u.email AS u__email, u.created_at AS u__created_at, u.updated_at AS u__updated_at FROM user u WHERE (u.id = ?) - (1)
+Dec 14 11:41:02 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list.php"
+Dec 14 11:41:02 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_th_tabular.php"
+Dec 14 11:41:02 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 14 11:41:02 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 14 11:41:02 symfony [info] {main} Set slot "sf_admin.current_header"
+Dec 14 11:41:02 symfony [info] {main} Get slot "sf_admin.current_header"
+Dec 14 11:41:03 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.id AS c__id, c.name AS c__name FROM category c LIMIT 20 - ()
+Dec 14 11:41:03 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_td_batch_actions.php"
+Dec 14 11:41:03 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_td_tabular.php"
+Dec 14 11:41:03 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_td_actions.php"
+Dec 14 11:41:03 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_td_batch_actions.php"
+Dec 14 11:41:03 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_td_tabular.php"
+Dec 14 11:41:03 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_td_actions.php"
+Dec 14 11:41:03 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_td_batch_actions.php"
+Dec 14 11:41:03 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_td_tabular.php"
+Dec 14 11:41:03 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_td_actions.php"
+Dec 14 11:41:03 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_td_batch_actions.php"
+Dec 14 11:41:03 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_td_tabular.php"
+Dec 14 11:41:03 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_td_actions.php"
+Dec 14 11:41:03 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_td_batch_actions.php"
+Dec 14 11:41:03 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_td_tabular.php"
+Dec 14 11:41:03 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_td_actions.php"
+Dec 14 11:41:03 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_td_batch_actions.php"
+Dec 14 11:41:03 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_td_tabular.php"
+Dec 14 11:41:03 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_td_actions.php"
+Dec 14 11:41:03 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_td_batch_actions.php"
+Dec 14 11:41:03 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_td_tabular.php"
+Dec 14 11:41:03 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_td_actions.php"
+Dec 14 11:41:03 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_td_batch_actions.php"
+Dec 14 11:41:03 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_td_tabular.php"
+Dec 14 11:41:03 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_td_actions.php"
+Dec 14 11:41:03 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_td_batch_actions.php"
+Dec 14 11:41:03 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_td_tabular.php"
+Dec 14 11:41:03 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_td_actions.php"
+Dec 14 11:41:03 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_td_batch_actions.php"
+Dec 14 11:41:03 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_td_tabular.php"
+Dec 14 11:41:03 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_td_actions.php"
+Dec 14 11:41:03 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_td_batch_actions.php"
+Dec 14 11:41:03 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_td_tabular.php"
+Dec 14 11:41:03 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_td_actions.php"
+Dec 14 11:41:03 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_batch_actions.php"
+Dec 14 11:41:03 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_actions.php"
+Dec 14 11:41:03 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_footer.php"
+Dec 14 11:41:03 symfony [info] {sfPHPView} Decorate content with "/Applications/MAMP/htdocs/postit/apps/backend/templates/layout.php"
+Dec 14 11:41:03 symfony [info] {sfPHPView} Render "/Applications/MAMP/htdocs/postit/apps/backend/templates/layout.php"
+Dec 14 11:41:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 14 11:41:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 14 11:41:03 symfony [info] {sfWebDebugLogger} Configuration 218.89 ms (11)
+Dec 14 11:41:03 symfony [info] {sfWebDebugLogger} Factories 10.11 ms (1)
+Dec 14 11:41:03 symfony [info] {sfWebDebugLogger} Action "category/index" 110.56 ms (1)
+Dec 14 11:41:03 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.07 ms (9)
+Dec 14 11:41:03 symfony [info] {sfWebDebugLogger} View "Success" for "category/index" 239.53 ms (1)
+Dec 14 11:41:03 symfony [info] {sfWebDebugLogger} Partial "category/_assets" 1.30 ms (1)
+Dec 14 11:41:03 symfony [info] {sfWebDebugLogger} Partial "category/_flashes" 1.06 ms (1)
+Dec 14 11:41:03 symfony [info] {sfWebDebugLogger} Partial "category/_list_header" 0.97 ms (1)
+Dec 14 11:41:03 symfony [info] {sfWebDebugLogger} Partial "category/_filters" 62.47 ms (1)
+Dec 14 11:41:03 symfony [info] {sfWebDebugLogger} Partial "category/_filters_field" 41.08 ms (2)
+Dec 14 11:41:03 symfony [info] {sfWebDebugLogger} Partial "category/_list" 116.14 ms (1)
+Dec 14 11:41:03 symfony [info] {sfWebDebugLogger} Partial "category/_list_th_tabular" 2.83 ms (1)
+Dec 14 11:41:03 symfony [info] {sfWebDebugLogger} Partial "category/_list_td_batch_actions" 10.41 ms (11)
+Dec 14 11:41:03 symfony [info] {sfWebDebugLogger} Partial "category/_list_td_tabular" 18.73 ms (11)
+Dec 14 11:41:03 symfony [info] {sfWebDebugLogger} Partial "category/_list_td_actions" 26.45 ms (11)
+Dec 14 11:41:03 symfony [info] {sfWebDebugLogger} Partial "category/_list_batch_actions" 1.42 ms (1)
+Dec 14 11:41:03 symfony [info] {sfWebDebugLogger} Partial "category/_list_actions" 1.03 ms (1)
+Dec 14 11:41:03 symfony [info] {sfWebDebugLogger} Partial "category/_list_footer" 0.78 ms (1)
+Dec 14 11:41:03 symfony [info] {sfWebResponse} Send content (119948 o)
+Dec 14 11:41:09 symfony [info] {sfPatternRouting} Match route "category_collection" (/category/:action/action.:sf_format) for /category/batch/action with parameters array (  'module' => 'category',  'action' => 'batch',  'sf_format' => 'html',)
+Dec 14 11:41:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 14 11:41:09 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 14 11:41:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 14 11:41:09 symfony [info] {categoryActions} Call "categoryActions->executeBatch()"
+Dec 14 11:41:09 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 14 11:41:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM category c WHERE c.id IN (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) - (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11)
+Dec 14 11:41:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name FROM category c WHERE (c.id IN (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)) - (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11)
+Dec 14 11:41:09 symfony [info] {Doctrine_Connection_Statement} execute : DELETE FROM category WHERE id = ? - (1)
+Dec 14 11:41:09 symfony [info] {Doctrine_Connection_Statement} execute : DELETE FROM category WHERE id = ? - (2)
+Dec 14 11:41:09 symfony [info] {Doctrine_Connection_Statement} execute : DELETE FROM category WHERE id = ? - (3)
+Dec 14 11:41:09 symfony [info] {Doctrine_Connection_Statement} execute : DELETE FROM category WHERE id = ? - (4)
+Dec 14 11:41:09 symfony [info] {Doctrine_Connection_Statement} execute : DELETE FROM category WHERE id = ? - (5)
+Dec 14 11:41:09 symfony [info] {Doctrine_Connection_Statement} execute : DELETE FROM category WHERE id = ? - (6)
+Dec 14 11:41:09 symfony [info] {Doctrine_Connection_Statement} execute : DELETE FROM category WHERE id = ? - (7)
+Dec 14 11:41:09 symfony [info] {Doctrine_Connection_Statement} execute : DELETE FROM category WHERE id = ? - (8)
+Dec 14 11:41:09 symfony [info] {Doctrine_Connection_Statement} execute : DELETE FROM category WHERE id = ? - (9)
+Dec 14 11:41:09 symfony [info] {Doctrine_Connection_Statement} execute : DELETE FROM category WHERE id = ? - (10)
+Dec 14 11:41:09 symfony [info] {Doctrine_Connection_Statement} execute : DELETE FROM category WHERE id = ? - (11)
+Dec 14 11:41:09 symfony [info] {sfFrontWebController} Redirect to "http://localhost:7001/backend_dev.php/category"
+Dec 14 11:41:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Dec 14 11:41:09 symfony [info] {sfWebResponse} Send header "Location: http://localhost:7001/backend_dev.php/category"
+Dec 14 11:41:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 14 11:41:09 symfony [info] {sfWebDebugLogger} Configuration 2.08 ms (9)
+Dec 14 11:41:09 symfony [info] {sfWebDebugLogger} Factories 10.31 ms (1)
+Dec 14 11:41:09 symfony [info] {sfWebDebugLogger} Action "category/batch" 79.07 ms (1)
+Dec 14 11:41:09 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.10 ms (14)
+Dec 14 11:41:09 symfony [info] {sfWebResponse} Send content (117 o)
+Dec 14 11:41:09 symfony [info] {sfPatternRouting} Match route "category" (/category.:sf_format) for /category with parameters array (  'module' => 'category',  'action' => 'index',  'sf_format' => 'html',)
+Dec 14 11:41:09 symfony [info] {myUser} Flag old flash messages ("notice")
+Dec 14 11:41:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 14 11:41:09 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 14 11:41:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 14 11:41:09 symfony [info] {categoryActions} Call "categoryActions->executeIndex()"
+Dec 14 11:41:09 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 14 11:41:09 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM category c - ()
+Dec 14 11:41:09 symfony [info] {sfPHPView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/indexSuccess.php"
+Dec 14 11:41:09 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_assets.php"
+Dec 14 11:41:09 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_flashes.php"
+Dec 14 11:41:09 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_header.php"
+Dec 14 11:41:09 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_filters.php"
+Dec 14 11:41:09 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_filters_field.php"
+Dec 14 11:41:09 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_filters_field.php"
+Dec 14 11:41:09 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.content AS p__content, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Dec 14 11:41:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.id AS u__id, u.name AS u__name, u.surname AS u__surname, u.username AS u__username, u.password AS u__password, u.email AS u__email, u.created_at AS u__created_at, u.updated_at AS u__updated_at FROM user u WHERE (u.id = ?) - (1)
+Dec 14 11:41:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.id AS u__id, u.name AS u__name, u.surname AS u__surname, u.username AS u__username, u.password AS u__password, u.email AS u__email, u.created_at AS u__created_at, u.updated_at AS u__updated_at FROM user u WHERE (u.id = ?) - (1)
+Dec 14 11:41:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.id AS u__id, u.name AS u__name, u.surname AS u__surname, u.username AS u__username, u.password AS u__password, u.email AS u__email, u.created_at AS u__created_at, u.updated_at AS u__updated_at FROM user u WHERE (u.id = ?) - (1)
+Dec 14 11:41:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.id AS u__id, u.name AS u__name, u.surname AS u__surname, u.username AS u__username, u.password AS u__password, u.email AS u__email, u.created_at AS u__created_at, u.updated_at AS u__updated_at FROM user u WHERE (u.id = ?) - (1)
+Dec 14 11:41:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.id AS u__id, u.name AS u__name, u.surname AS u__surname, u.username AS u__username, u.password AS u__password, u.email AS u__email, u.created_at AS u__created_at, u.updated_at AS u__updated_at FROM user u WHERE (u.id = ?) - (1)
+Dec 14 11:41:09 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list.php"
+Dec 14 11:41:09 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_batch_actions.php"
+Dec 14 11:41:09 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_actions.php"
+Dec 14 11:41:09 symfony [info] {sfPartialView} Render "/Applications/MAMP/htdocs/postit/cache/backend/dev/modules/autoCategory/templates/_list_footer.php"
+Dec 14 11:41:09 symfony [info] {sfPHPView} Decorate content with "/Applications/MAMP/htdocs/postit/apps/backend/templates/layout.php"
+Dec 14 11:41:09 symfony [info] {sfPHPView} Render "/Applications/MAMP/htdocs/postit/apps/backend/templates/layout.php"
+Dec 14 11:41:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 14 11:41:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 14 11:41:09 symfony [info] {sfWebDebugLogger} Configuration 2.17 ms (10)
+Dec 14 11:41:09 symfony [info] {sfWebDebugLogger} Factories 8.88 ms (1)
+Dec 14 11:41:09 symfony [info] {sfWebDebugLogger} Action "category/index" 13.22 ms (1)
+Dec 14 11:41:09 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.06 ms (8)
+Dec 14 11:41:09 symfony [info] {sfWebDebugLogger} View "Success" for "category/index" 69.07 ms (1)
+Dec 14 11:41:09 symfony [info] {sfWebDebugLogger} Partial "category/_assets" 0.85 ms (1)
+Dec 14 11:41:09 symfony [info] {sfWebDebugLogger} Partial "category/_flashes" 0.97 ms (1)
+Dec 14 11:41:09 symfony [info] {sfWebDebugLogger} Partial "category/_list_header" 0.84 ms (1)
+Dec 14 11:41:09 symfony [info] {sfWebDebugLogger} Partial "category/_filters" 52.30 ms (1)
+Dec 14 11:41:09 symfony [info] {sfWebDebugLogger} Partial "category/_filters_field" 45.79 ms (2)
+Dec 14 11:41:09 symfony [info] {sfWebDebugLogger} Partial "category/_list" 1.22 ms (1)
+Dec 14 11:41:09 symfony [info] {sfWebDebugLogger} Partial "category/_list_batch_actions" 1.51 ms (1)
+Dec 14 11:41:09 symfony [info] {sfWebDebugLogger} Partial "category/_list_actions" 1.12 ms (1)
+Dec 14 11:41:09 symfony [info] {sfWebDebugLogger} Partial "category/_list_footer" 0.82 ms (1)
+Dec 14 11:41:09 symfony [info] {sfWebResponse} Send content (64971 o)
+Dec 14 11:41:09 symfony [info] {myUser} Remove old flash messages ("notice")

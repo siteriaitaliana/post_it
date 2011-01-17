@@ -1,0 +1,106 @@
+/* some resetters! */
+html{color:#000;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}del,ins{text-decoration:none;}
+
+
+li{list-style: none;}
+ul{padding-left: 3px;}
+
+body {
+background-color:#F2F2F2;
+color:#000000;
+font-family:Helvetica,Arial,sans-serif;
+font-size:12px;
+}
+
+#sidebar{float: right;width: 120px;margin-top: 40px; }
+a{color: #7c01aa; text-decoration: none; }
+a:hover{color: #e22092;}
+
+#title_cat{ margin-left: 50px; width: 80%; margin: 0 auto; background-color: #efcdf4; margin-top: 110px; height: 20px; padding-top: 5px; padding-left: 30px; -webkit-border-radius: 10px;
+-moz-border-radius: 10px; border-radius: 10px; border: 1px solid white; }
+
+.welcome{font-size: 14px; margin-top: 17px;margin-right: 10px; color: #7c01aa; position: absolute; top: 0px; right: -50px;}
+#logout{right: -170px;width: 50px;}
+#newpostit{float: left; margin-left: -450px;}
+#show-all{float: left; background: #e22092  repeat-x; color: white;font-size:12px; width: 70px; text-align: center; height: 15px;	padding: 4px 8px 12px; margin-top: 5px;}
+#show-all:hover{background-color: #c81e82;}
+
+#content{margin: 0 auto; width: 950px; overflow: hidden;}
+#container_backend {margin: 0 auto; width: 950px;}
+#content_backend {margin: 0 auto; width: 950px; clear: both;}
+#menu_backend{float:right; margin-top: 70px; margin-right: 500px;}
+#menu_backend ul li{list-style: none; display: inline; margin-left: 10px; font-size: 14px;}
+.sf_admin_list table{float: left; width: 650px;}
+.sf_admin_filter table{float: right; width: 280px;}
+.sf_admin_actions {clear: both;}
+.cat_text{float: left;}
+
+.error{color: #e22092; text-shadow: 0px 0px 1px #8f19ff; font-size: 14px;}
+
+h1.title{margin-top: 35px;  float: left; font-size: 50px; font-family: Helvetica; text-shadow: 0px 0px 2px #8f19ff; margin-bottom: 10px; margin-left: 20px;}
+h3{color: white; font-size: 20px; float: left; margin-left: 10px; margin-top: -4px; text-shadow: 0px 0px 3px #000;}
+
+.content_link{color:#000; text-decoration: none;}
+.content_link:hover{color:#e22092; }
+
+#table_show{margin-top: 100px;}
+table th{width: 80px;}
+table tr{height: 30px; }
+table tbody tr td textarea{margin-bottom: 10px;}
+table tbody tr td table tbody tr th{width: 20px;}
+table tbody tr td table tbody tr td input{margin-left: 3px;}
+table{margin-bottom: 20px;}
+
+#edit_form{margin-top: 100px;}
+#new_form{margin-top: 100px;}
+#login_form{margin-top: 100px;}
+
+.login_table{margin-top: 20px; }
+.login_table tr{height: 30px;}
+.login_table .button{margin-top: 20px;}
+
+.show_table tr{height: 30px;}
+
+.list_ext{padding: 0px;padding-left: 10px;}
+.list_int{list-style: none; float: left; margin: 10px;}
+
+#content_int{width: 830px; margin: 10px auto; clear: both; float: left; min-height: 450px;}
+
+#postcontent{font-size: 15px; height: 150px; }
+#category{font-size: 10px;color:black; }
+#date{font-size: 10px;margin-top: 3px;}
+
+.post{background-color:#feff80; width: 230px; min-height: 200px;padding: 10px;-moz-box-shadow: 0px 0px 15px #888; -webkit-box-shadow: 10px 10px 5px #888; box-shadow: 10px 10px 5px #888; }
+
+table tr th{text-align: left;}
+table tr td input{margin-left: 20px;}
+
+#button-back{clear: both; margin-left: 105px;}
+#register_button{margin-left: 200px;}
+
+.button, .button:visited {
+	margin-right: 10px;
+	background: #e22092  repeat-x;
+	display: inline-block;
+	padding: 8px 14px 9px;
+	color: #fff;
+	font-size:14px;
+	text-decoration: none;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+	border-bottom: 1px solid rgba(0,0,0,0.25);
+	position: relative;
+	cursor: pointer;
+	margin-bottom: 3px;
+}
+
+.button:hover { background-color: #c81e82; }
+
+#background{clear: both; margin-top: 100px; margin-left: 100px; margin-bottom: -20px;}
+#button-side{float: right; position: relative; top:45px; right:180px;}
+
+#footer{clear: both; padding-top: 20px;  }
+#footer p {margin-top: 3px; font-size: 12px; color:#7c01aa; text-align: center;margin-bottom: 30px; }
