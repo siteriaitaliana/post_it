@@ -18,6 +18,19 @@ class postActions extends sfActions
     $this->categories = CategoryTable::showAllCategory($this->getUser()->getAttribute('user_id'));  
     }    
   }
+  
+  public function executeContent(sfWebRequest $request)
+  {
+        
+        $id = $request->getParameter('id');
+        $post = Doctrine::getTable('post')->find($id);
+        $contenuto = $request->getParameter('contenuto');
+        $post->setContent($contenuto);
+        $post->save();
+        
+        
+        $this->redirect('post/index');
+  }
 
   public function executeNew(sfWebRequest $request)
   {

@@ -22,9 +22,18 @@
 	
   	  <li class="list_int">
       <div id="post_<?php echo $i ?>" class="post">
-      <div id="postcontent"><a class="content_link" href="<?php echo url_for('post/edit?id='.$post->getId()) ?>"><?php echo $post->getContent();?></a></div>
-     
-      <div id="category"><b><?php echo "Category: "?></b>
+      <!-- <div id="postcontent" class="content_link"><a href="<?php //echo url_for('post/content?id='.$post->getId()) ?>"><?php //echo $post->getContent();?></div> -->
+ 	<div id="postcontent" class="content_link">
+ 	
+ 	<form method="post" action="<?php echo url_for('post/content') ?>">
+ 		<input type="hidden" name="id" class="iddi" value="<?php echo($post->getId())?>">
+ 	 	<input type="text"  name="contenuto" id="post_content" value="<?php echo $post->getContent();?>"  >
+ 	 	<input  type="submit">
+ 	</form>
+ 	
+ 	</div> 
+
+      <div id="category"><a href="<?php echo url_for('post/edit?id='.$post->getId()) ?>"><b><?php echo "Category: "?></b></a>
       <?php foreach($post->getCategory() as $category): ?>
       <?php echo $category ?>
       <?php endforeach; ?>
